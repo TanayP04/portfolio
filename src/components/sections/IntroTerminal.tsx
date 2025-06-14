@@ -98,7 +98,7 @@ const IntroTerminal: React.FC = () => {
                   className="flex flex-wrap gap-4 mt-6"
                 >
                   <NeonButton 
-                    href="https://drive.google.com/file/d/1GMIoyYLa7csvPx8aAXANgBGSVegm-e6U/view?usp=sharing" 
+                    href="https://drive.google.com/file/d/1fnzYHuLijU3ZpWZKu1eR-nG7oD4_S9kR/view?usp=sharing" 
                     target="_blank"
                     icon={<FileText size={16} />}
                     color="blue"

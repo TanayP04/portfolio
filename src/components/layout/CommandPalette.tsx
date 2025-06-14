@@ -24,7 +24,7 @@ const CommandPalette: React.FC = () => {
       id: 'resume',
       icon: <FileText size={16} />,
       label: 'View Resume',
-      action: () => window.open('https://drive.google.com/file/d/1GMIoyYLa7csvPx8aAXANgBGSVegm-e6U/view?usp=sharing', '_blank'),
+      action: () => window.open('https://drive.google.com/file/d/1fnzYHuLijU3ZpWZKu1eR-nG7oD4_S9kR/view?usp=sharing'),
       keywords: ['cv', 'resume', 'download', 'pdf'],
     },
     {
