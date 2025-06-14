@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-cyber-black text-white font-rajdhani overflow-x-hidden scrollbar-hide;
+    scroll-behavior: smooth;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-orbitron;
+  }
+}
+
+@layer components {
+  .neon-border {
+    @apply border border-neon-blue shadow-neon-blue;
+  }
+  
+  .neon-purple-border {
+    @apply border border-neon-purple shadow-neon-purple;
+  }
+  
+  .neon-green-border {
+    @apply border border-neon-green shadow-neon-green;
+  }
+  
+  .neon-text {
+    @apply text-neon-blue;
+  }
+  
+  .neon-purple-text {
+    @apply text-neon-purple;
+  }
+  
+  .neon-green-text {
+    @apply text-neon-green;
+  }
+  
+  .terminal-text::after {
+    content: '|';
+    @apply animate-terminal;
+  }
+
+  .cyber-card {
+    @apply bg-cyber-gray rounded border border-cyber-light p-6 backdrop-blur-sm;
+  }
+  
+  .glitch-effect {
+    @apply relative overflow-hidden;
+  }
+  
+  .glitch-effect::before, .glitch-effect::after {
+    @apply content-[''] absolute top-0 left-0 w-full h-full;
+    clip: rect(0, 0, 0, 0);
+  }
+  
+  .glitch-effect::before {
+    @apply text-neon-blue left-[2px] bg-cyber-black;
+    animation: glitch 500ms infinite linear alternate-reverse;
+  }
+  
+  .glitch-effect::after {
+    @apply text-neon-pink left-[-2px] bg-cyber-black;
+    animation: glitch 750ms infinite linear alternate;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}
